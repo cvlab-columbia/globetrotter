@@ -47,7 +47,7 @@ you can use the flag `not_use_images`.
 
 ## Pretrained models
 
-The pretrained models reported in our paper can be found in [this link (pretrained_models.tar.gz)](https://globetrotter.cs.columbia.edu/pretrained_models.tar.gz):
+The pretrained models reported in our paper can be found in [this link (checkpoints.tar.gz)](https://globetrotter.cs.columbia.edu/checkpoints.tar.gz):
 
 Each folder (one for each model) contains a `.pth` file with the checkpoint, as well as a `.json` file with the configuration.
 
