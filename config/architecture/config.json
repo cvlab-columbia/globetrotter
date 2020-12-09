@@ -1,0 +1,15 @@
+{
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "sigurdsson_hid_size": 300,
+  "contrastive_size": 128,
+  "initializer_range": 0.02,
+  "intermediate_size": 1024,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 4,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 3,
+  "output_attentions": true
+}

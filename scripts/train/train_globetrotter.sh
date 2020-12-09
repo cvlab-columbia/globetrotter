@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+CUDA_VISIBLE_DEVICES=0,1,2,3 NCCL_LL_THRESHOLD=0 python \
+-W ignore \
+-i \
+-m torch.distributed.launch \
+--master_port=9999 \
+--nproc_per_node=4 \
+main.py \
+--dataset_path [/path/to/datasets/dir] \
+--results_dir [/path/to/results/dir] \
+--checkpoint_dir [/path/to/checkpoints/dir] \
+--runs_dir [/path/to/runs/dir] \
+--dataset_info_path [/path/to/dataset/info/dir] \
+--num_epochs 200 \
+--batch_size 110 \
+--tokenizer_type huggingface \
+--name train_globetrotter \
+--lambda_visual_loss 1 \
+--lambda_xlang_loss 1 \
+--lambda_xm_loss 1 \
+--lambda_lm_loss 1 \
+--lambda_orthogonality_loss 0 \
+--augment_image \
+--config_data all-lang_test-zh-en \
+--workers 12 \
+--fp16 \
+--language_split training \
+--pretrained_cnn \
+--learning_rate 0.0001 \
+--p_clobber_other_txt 0.2 \
+--alpha_xm \
+--two_heads_modality \
+--resume \
+--resume_name train_globetrotter

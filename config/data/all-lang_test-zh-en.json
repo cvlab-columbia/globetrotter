@@ -1,0 +1,10 @@
+{
+    "other": "",
+    "datasets": ["coco", "flickr", "conceptual"],
+    "training": ["af", "az", "bs", "de", "fa-AF", "ha", "hr", "it", "ko", "ms", "pl", "ro", "sl", "sr", "ta", "tr",
+           "vi", "am", "bg", "cs", "el", "et", "fi", "he", "hu", "ja", "nl", "ps", "ru", "so", "sv", "th", "uk",
+           "ar", "bn", "da", "fa", "fr", "hi", "id", "ka", "lv", "no", "pt", "sk", "sq", "es", "sw", "tl", "ur"],
+    "testing": [""],
+  "tokenizer_from": "",
+  "word2vec_from": ""
+}
