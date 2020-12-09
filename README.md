@@ -1,4 +1,4 @@
-# Globetrotter:
+# Globetrotter
 
 Code from the paper [Learning to Learn Words from Visual Scenes](https://arxiv.org/abs/2012.04631).
 
