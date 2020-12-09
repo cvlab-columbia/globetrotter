@@ -10,7 +10,7 @@ If you use the code or the dataset, please consider citing the paper as:
 @article{suris2019learning,
   title={Globetrotter: Unsupervised Multilingual Translation from Visual Alignment},
   author={Sur\'is, D\'idac and Epstein, Dave and Vondrick, Carl},
-  journal={arXiv preprint arXiv:XXXX},
+  journal={arXiv preprint arXiv:2012.04631},
   year={2020}
 }
 ```
