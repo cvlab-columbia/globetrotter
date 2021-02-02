@@ -1,4 +1,4 @@
-# TODO
+## Naming
 There are 52 languages. The datasets are split in 52 splits. The first split has captions for all the languages. 
 The other 51 splits have captions for one of the languages that is not English. 
 And then, English has captions for all the 52 splits. There are four cases of dataset we may want. 
