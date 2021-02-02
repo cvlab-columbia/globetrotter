@@ -26,7 +26,7 @@ language_to_id = {lang: i for i, lang in enumerate(lang_split[language_split])}
 
 dict_sentences = collections.defaultdict(list)
 # The data info has to exist beforehand
-for subsplit in ['train', 'var']:
+for subsplit in ['train', 'val']:
     info_file = os.path.join(dataset_info_path,
                              f'dataset_info_{config_data}_{language_split}lang_{subsplit}subsplit.pth')
     if os.path.isfile(info_file):
