@@ -240,7 +240,6 @@ def _process_alignment_languages(list_numbers=None, list_numbers_query=None, lan
             topk_values = similarities_i[np.tile(np.array(range(lang_vector_i.shape[0]))[..., np.newaxis], (1, K)), topk_indices]
             mean_similarity[start:end] = topk_values.mean(1)
 
-    predictions = [0, 0]
     histogram = np.zeros(text_predictions.shape[0])
     if cosine:
         text_predictions = text_predictions / np.sqrt((text_predictions ** 2).sum(-1)[..., np.newaxis])
@@ -270,12 +269,6 @@ def _process_alignment_languages(list_numbers=None, list_numbers_query=None, lan
             # We do not want to select the same language
             similarities_i[lang_vector_expanded_1 == lang_vector_expanded_2] = -1000
             # similarities_i = similarities_i.astype(np.float16)
-
-        max_sim = similarities_i.argmax(axis=1)
-        for j in range(similarities_i.shape[0]):
-            predictions[0] += 1  # Count
-            if list_numbers[max_sim[j]] == list_numbers_query[start+j]:
-                predictions[1] += 1
 
         # Besides computing the argmax, we also compute the position for all 49 positive examples, to create histogram
         sorted_idx = (-similarities_i).argsort()
