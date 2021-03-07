@@ -305,6 +305,6 @@ class MultipleDatasets(data.Dataset):
 
         text_token_ids = utils.collate_fn([text_token_ids], cat_tensors=False)
 
-        return {'imgs': img, 'text': text_token_ids, 'text_tokens': text_tokens_list, 'text_len': text_len_list,
-                'language': language, 'pos_to_predict': positions_to_predict_list, 'gt_tokens': gt_tokens_tensor,
+        return {'imgs': img, 'text': text_token_ids, 'text_tokens': text_tokens, 'text_len': text_len,
+                'language': language, 'pos_to_predict': positions_to_predict, 'gt_tokens': gt_tokens,
                 'idxs': sample_idx}
