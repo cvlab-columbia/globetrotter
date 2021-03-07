@@ -106,7 +106,7 @@ class Trainer:
                 images = None
                 if not self.args.not_use_images:
                     images = data['imgs'].to(self.args.device)
-                    images = images.view([-1] + list(images.shape[2:]))
+                    #images = images.view([-1] + list(images.shape[2:]))
 
                 # ----------------- Forward model and compute losses ---------- #
                 with autocast(enabled=self.args.fp16):
