@@ -193,7 +193,7 @@ def main():
     loader_dict = {}
     for subsplit in subsplits:
         sampler, shuffle = get_sampler(subsplit)
-        loader_dict[subsplit] = DataLoader(dataset_dict[subsplit], batch_size=batch_size, sampler=sampler,
+        loader_dict[subsplit] = DataLoader(dataset_dict[subsplit], batch_size=args.batch_size, sampler=sampler,
                                            shuffle=shuffle, num_workers=args.workers, collate_fn=utils.collate_fn,
                                            pin_memory=True, drop_last=True)
 
