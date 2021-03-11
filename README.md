@@ -1,6 +1,6 @@
 # Globetrotter
 
-Code from the paper [Learning to Learn Words from Visual Scenes](https://arxiv.org/abs/2012.04631).
+Code from the paper [Globetrotter: Unsupervised Multilingual Translation from Visual Alignment](https://arxiv.org/abs/2012.04631).
 
 Website of the project in [globetrotter.cs.columbia.edu](https://globetrotter.cs.columbia.edu).
 
