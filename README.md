@@ -1,17 +1,17 @@
 # Globetrotter
 
-Code from the paper [Globetrotter: Unsupervised Multilingual Translation from Visual Alignment](https://arxiv.org/abs/2012.04631).
+Code from the paper [Globetrotter: Connecting Languages by Connecting Images](https://arxiv.org/abs/2012.04631).
 
 Website of the project in [globetrotter.cs.columbia.edu](https://globetrotter.cs.columbia.edu).
 
 If you use the code or the dataset, please consider citing the paper as:
 
 ```
-@article{suris2019learning,
-  title={Globetrotter: Unsupervised Multilingual Translation from Visual Alignment},
+@article{globetrotter,
+  title={Globetrotter: Connecting Languages by Connecting Images},
   author={Sur\'is, D\'idac and Epstein, Dave and Vondrick, Carl},
-  journal={arXiv preprint arXiv:2012.04631},
-  year={2020}
+  journal={Computer Vision and Pattern Recognition (CVPR)},
+  year={2022}
 }
 ```
 
